@@ -1,0 +1,14 @@
+{
+  "name": "Landing Portfolio",
+  "short_name": "LPortfolio",
+  "icons": [
+    {
+      "src": "/favicon/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ],
+  "theme_color": "#1a1a2e",
+  "background_color": "#0a0e17",
+  "display": "standalone"
+}

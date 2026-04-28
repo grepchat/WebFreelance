@@ -1,0 +1,127 @@
+export const translations = {
+  ru: {
+    hero: {
+      available: 'Доступен для заказов',
+      greeting: 'Привет, я',
+      name: 'grepchat',
+      description: 'Создаю лендинги, которые продают. Next.js, дизайн, скорость.',
+      ctaWorks: 'Смотреть работы',
+      ctaContact: 'Связаться',
+      tech: ['Next.js', 'Tailwind', 'Framer Motion', 'TypeScript'],
+    },
+    about: {
+      badge: 'Обо мне',
+      title: 'Григорий — он же',
+      name: 'grepchat',
+      description:
+        'Занимаюсь веб-разработкой. Создаю лендинги, которые приносят клиентам реальные заявки. В каждом проекте — внимание к деталям, чистая архитектура и анимации, которые запоминаются.',
+      skills: [
+        { title: 'Разработка', desc: 'Next.js, React, TypeScript — современный стек' },
+        { title: 'Дизайн', desc: 'Адаптивные UI с Tailwind CSS и анимациями' },
+        { title: 'Продвижение', desc: 'SEO, Open Graph, мета-теги для соцсетей' },
+        { title: 'Скорость', desc: 'Быстрая загрузка, Lazy Loading, оптимизация' },
+      ],
+    },
+    portfolio: {
+      badge: 'Портфолио',
+      title: 'Проекты, которые я сделал',
+      description: 'Каждый лендинг — готовое решение под ключ. Адаптив, анимации, формы.',
+      projects: [
+        { name: 'LUMIÈRE Beauty Studio', niche: 'Бьюти-салон', desc: 'Премиальный салон красоты с галереей работ и онлайн-записью' },
+        { name: 'IRONPULSE Coaching', niche: 'Фитнес-коучинг', desc: 'Онлайн-тренировки с программами и результатами клиентов' },
+        { name: 'CodeForge Academy', niche: 'Онлайн-курсы', desc: 'Курсы программирования с менторством и трудоустройством' },
+        { name: 'VERTEX Строй', niche: 'Строительная компания', desc: 'Строительство коммерческих объектов под ключ' },
+        { name: 'APEX Detailing', niche: 'Премиум детейлинг', desc: 'Детейлинг центр с калькулятором и портфолио' },
+      ],
+      cta: 'Обсудить ваш проект',
+    },
+    contact: {
+      badge: 'Свяжитесь со мной',
+      title: 'Готовы начать?',
+      description: 'Оставьте заявку — я свяжусь с вами в ближайшее время. Обсудим задачу, сроки и бюджет.',
+      email: 'g.chadakin@mail.ru',
+      telegram: '@grepchat (Telegram)',
+      form: {
+        nameLabel: 'Как вас зовут?',
+        namePlaceholder: 'Александр',
+        phoneLabel: 'Телефон',
+        phonePlaceholder: '+7 (999) 000-00-00',
+        submit: 'Отправить',
+        submitting: 'Отправка...',
+        privacy: 'Нажимая кнопку, вы соглашаетесь с политикой конфиденциальности',
+        thanks: 'Спасибо!',
+        thanksDesc: 'Я свяжусь с вами в ближайшее время.',
+      },
+    },
+    footer: {
+      brand: 'grepchat',
+      tagline: 'Разработка продающих лендингов',
+      rights: 'Все права защищены.',
+    },
+    languageSwitch: 'EN',
+  },
+  en: {
+    hero: {
+      available: 'Available for orders',
+      greeting: "Hi, I'm",
+      name: 'grepchat',
+      description: 'I create landing pages that sell. Next.js, design, speed.',
+      ctaWorks: 'View portfolio',
+      ctaContact: 'Get in touch',
+      tech: ['Next.js', 'Tailwind', 'Framer Motion', 'TypeScript'],
+    },
+    about: {
+      badge: 'About me',
+      title: 'Grigory — aka',
+      name: 'grepchat',
+      description:
+        'I do web development. I create landing pages that bring real leads to my clients. Every project has attention to detail, clean architecture, and memorable animations.',
+      skills: [
+        { title: 'Development', desc: 'Next.js, React, TypeScript — modern stack' },
+        { title: 'Design', desc: 'Responsive UI with Tailwind CSS & animations' },
+        { title: 'Promotion', desc: 'SEO, Open Graph, meta tags for social media' },
+        { title: 'Speed', desc: 'Fast loading, Lazy Loading, optimization' },
+      ],
+    },
+    portfolio: {
+      badge: 'Portfolio',
+      title: "Projects I've built",
+      description: 'Each landing page is a turnkey solution. Responsive, animated, with forms.',
+      projects: [
+        { name: 'LUMIÈRE Beauty Studio', niche: 'Beauty salon', desc: 'Premium beauty salon with gallery and online booking' },
+        { name: 'IRONPULSE Coaching', niche: 'Fitness coaching', desc: 'Online training with programs and client results' },
+        { name: 'CodeForge Academy', niche: 'Online courses', desc: 'Programming courses with mentoring and job placement' },
+        { name: 'VERTEX Construction', niche: 'Construction company', desc: 'Commercial construction turnkey' },
+        { name: 'APEX Detailing', niche: 'Premium detailing', desc: 'Detailing center with calculator and portfolio' },
+      ],
+      cta: 'Discuss your project',
+    },
+    contact: {
+      badge: 'Contact me',
+      title: 'Ready to start?',
+      description: "Leave a request — I'll get back to you soon. Let's discuss the task, deadlines, and budget.",
+      email: 'g.chadakin@mail.ru',
+      telegram: '@grepchat (Telegram)',
+      form: {
+        nameLabel: "What's your name?",
+        namePlaceholder: 'Alexander',
+        phoneLabel: 'Phone',
+        phonePlaceholder: '+1 (555) 000-0000',
+        submit: 'Send',
+        submitting: 'Sending...',
+        privacy: 'By clicking the button, you agree to the privacy policy',
+        thanks: 'Thank you!',
+        thanksDesc: "I'll get back to you shortly.",
+      },
+    },
+    footer: {
+      brand: 'grepchat',
+      tagline: 'Selling landing page development',
+      rights: 'All rights reserved.',
+    },
+    languageSwitch: 'RU',
+  },
+}
+
+export type Locale = keyof typeof translations
+export type TranslationKeys = typeof translations.ru
