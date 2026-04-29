@@ -12,18 +12,22 @@ export default function ContactForm() {
 
   const [name, setName] = useState('')
   const [phone, setPhone] = useState('')
+  const [messenger, setMessenger] = useState('')
+  const [message, setMessage] = useState('')
   const [submitted, setSubmitted] = useState(false)
   const [loading, setLoading] = useState(false)
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setLoading(true)
-    const result = await submitContactForm(name, phone)
+    const result = await submitContactForm(name, phone, messenger, message)
     setLoading(false)
     if (result.success) {
       setSubmitted(true)
       setName('')
       setPhone('')
+      setMessenger('')
+      setMessage('')
       setTimeout(() => setSubmitted(false), 5000)
     }
   }
@@ -84,6 +88,26 @@ export default function ContactForm() {
                       onChange={(e) => setPhone(e.target.value)}
                       className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none transition-all bg-white"
                       placeholder={c.form.phonePlaceholder}
+                    />
+                  </div>
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 mb-2">{c.form.messengerLabel}</label>
+                    <input
+                      type="text"
+                      value={messenger}
+                      onChange={(e) => setMessenger(e.target.value)}
+                      className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none transition-all bg-white"
+                      placeholder={c.form.messengerPlaceholder}
+                    />
+                  </div>
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 mb-2">{c.form.messageLabel}</label>
+                    <textarea
+                      rows={3}
+                      value={message}
+                      onChange={(e) => setMessage(e.target.value)}
+                      className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none transition-all bg-white resize-none"
+                      placeholder={c.form.messagePlaceholder}
                     />
                   </div>
                   <button
