@@ -44,3 +44,5 @@ yarn-error.log*
 
 README_LANDING_PLAN.md
 SESSION_PLAN.md
+.playwright-mcp
+CLIENT_WORKFLOW_GUIDE.md
