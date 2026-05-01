@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "LUMIÈRE Beauty Studio — Искусство быть собой",
+  title: "LUMIÈRE Beauty Studio — Grepchat Landings",
   description: "Премиальный бьюти-салон в России. Стрижки, окрашивание, маникюр, косметология. Запишитесь онлайн!",
   openGraph: {
     title: "LUMIÈRE Beauty Studio — Искусство быть собой",

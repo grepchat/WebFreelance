@@ -1,4 +1,4 @@
-👋 Привет, я Григорий (grepchat)
+# Grepchat Landings
 
 Помогаю бизнесу и фрилансерам получать клиентов через профессиональные лендинги.
 
@@ -25,6 +25,8 @@
 | 🚗 Автодетейлинг | APEX Detailing | 11 |
 
 **Стек:** Next.js 14, Tailwind CSS, Framer Motion, TypeScript
+
+**ИИ-чат (демо на `/ironpulse`):** задайте в `.env.local` переменную `OPENAI_API_KEY` (только сервер, без `NEXT_PUBLIC_`). Без ключа чат показывает текст-заглушку.
 
 ---
 

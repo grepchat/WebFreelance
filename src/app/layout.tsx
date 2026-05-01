@@ -68,10 +68,16 @@ const roboto = Roboto({
 })
 
 export const metadata: Metadata = {
-  title: 'Landing Portfolio — Готовые решения для бизнеса',
-  description: '5 профессиональных лендингов для продажи услуг фрилансера',
+  title: 'Grepchat Landings',
+  description: 'Портфолио продающих лендингов для бизнеса от grepchat',
   icons: {
-    icon: '/favicon/favicon.svg',
+    icon: [
+      {
+        url: '/favicon/favicon.svg',
+        type: 'image/svg+xml',
+        sizes: 'any',
+      },
+    ],
   },
 }
 

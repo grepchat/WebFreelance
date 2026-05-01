@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "IRONPULSE Coaching — Онлайн-коучинг и фитнес",
+  title: "IRONPULSE Coaching — Grepchat Landings",
   description: "Персональные программы тренировок и питания от профессионального тренера. Трансформация тела онлайн.",
   openGraph: {
     title: "IRONPULSE Coaching — Онлайн-коучинг и фитнес",

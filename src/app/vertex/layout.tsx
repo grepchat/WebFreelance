@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "VERTEX Строй — Строительство коммерческих объектов под ключ",
+  title: "VERTEX Строй — Grepchat Landings",
   description: "Строим офисы, ТЦ, склады и бизнес-центры. 15 лет опыта, гарантия качества, соблюдение сроков.",
   openGraph: {
     title: "VERTEX Строй — Строительство коммерческих объектов",

@@ -1,16 +1,26 @@
-export async function sendToEmailJS(name: string, phone: string, messenger: string, message: string) {
+type ContactResult = { success: boolean; error?: string }
+
+function isConfigured(value: string | undefined) {
+  if (!value) return false
+  return !value.trim().toLowerCase().startsWith('your_')
+}
+
+export async function sendToEmailJS(name: string, phone: string, messenger: string, message: string): Promise<ContactResult> {
   const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID
   const templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID
   const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
 
-  if (!serviceId || !templateId || !publicKey) {
-    console.warn('EmailJS not configured. Lead:', { name, phone, messenger, message })
-    return { success: true }
+  if (!isConfigured(serviceId) || !isConfigured(templateId) || !isConfigured(publicKey)) {
+    console.warn('EmailJS is not configured with real credentials.')
+    return { success: false, error: 'EmailJS is not configured' }
   }
+  const safeServiceId = serviceId as string
+  const safeTemplateId = templateId as string
+  const safePublicKey = publicKey as string
 
   try {
     const emailjs = await import('@emailjs/browser')
-    const res = await emailjs.default.send(serviceId, templateId, { name, phone, messenger, message }, publicKey)
+    const res = await emailjs.default.send(safeServiceId, safeTemplateId, { name, phone, messenger, message }, safePublicKey)
     return { success: res.status === 200 }
   } catch (err) {
     console.error('EmailJS error:', err)
@@ -18,13 +28,13 @@ export async function sendToEmailJS(name: string, phone: string, messenger: stri
   }
 }
 
-export async function sendToTelegram(name: string, phone: string, messenger: string, message: string) {
+export async function sendToTelegram(name: string, phone: string, messenger: string, message: string): Promise<ContactResult> {
   const token = process.env.NEXT_PUBLIC_TELEGRAM_BOT_TOKEN
   const chatId = process.env.NEXT_PUBLIC_TELEGRAM_CHAT_ID
 
-  if (!token || !chatId) {
+  if (!isConfigured(token) || !isConfigured(chatId)) {
     console.warn('Telegram not configured. Lead:', { name, phone, messenger, message })
-    return { success: true }
+    return { success: false, error: 'Telegram is not configured' }
   }
 
   const tgMessage =
@@ -49,17 +59,12 @@ export async function sendToTelegram(name: string, phone: string, messenger: str
 }
 
 export async function submitContactForm(name: string, phone: string, messenger: string, message: string) {
-  const [emailResult, telegramResult] = await Promise.allSettled([
-    sendToEmailJS(name, phone, messenger, message),
-    sendToTelegram(name, phone, messenger, message),
-  ])
-
-  const emailOk = emailResult.status === 'fulfilled' && emailResult.value.success
-  const telegramOk = telegramResult.status === 'fulfilled' && telegramResult.value.success
-
-  if (!emailOk && !telegramOk) {
-    console.log('Lead (fallback):', { name, phone, messenger, message })
+  const emailResult = await sendToEmailJS(name, phone, messenger, message)
+  if (!emailResult.success) {
+    return { success: false, error: emailResult.error ?? 'EmailJS send failed' }
   }
 
-  return { success: emailOk || telegramOk }
+  // Telegram is optional; it should never block successful EmailJS delivery.
+  void sendToTelegram(name, phone, messenger, message)
+  return { success: true }
 }

@@ -3,6 +3,10 @@
 import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { Send, CheckCircle2 } from 'lucide-react'
+import PrivacyPolicyModal from '@/components/ui/PrivacyPolicyModal'
+import { translations } from '@/translations'
+
+const ru = translations.ru
 
 const goals = [
   { id: 'loss', label: 'Похудение' },
@@ -14,6 +18,7 @@ const goals = [
 export default function Contact() {
   const [form, setForm] = useState({ name: '', phone: '', goal: 'loss', comment: '' })
   const [submitted, setSubmitted] = useState(false)
+  const [privacyOpen, setPrivacyOpen] = useState(false)
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
@@ -118,13 +123,28 @@ export default function Contact() {
                   </span>
                 </button>
                 <p className="text-xs text-center text-gray-500 mt-4">
-                  Нажимая кнопку, вы соглашаетесь с политикой конфиденциальности.
+                  {ru.contact.form.privacyBefore}
+                  <button
+                    type="button"
+                    onClick={() => setPrivacyOpen(true)}
+                    className="text-iron-accent underline decoration-iron-accent/40 underline-offset-2 hover:decoration-iron-accent"
+                  >
+                    {ru.contact.form.privacyLink}
+                  </button>
                 </p>
               </form>
             )}
           </motion.div>
         </div>
       </div>
+      <PrivacyPolicyModal
+        open={privacyOpen}
+        onClose={() => setPrivacyOpen(false)}
+        title={ru.privacyPolicy.title}
+        closeLabel={ru.privacyPolicy.close}
+        sections={ru.privacyPolicy.sections}
+        variant="dark"
+      />
     </section>
   )
 }

@@ -10,6 +10,7 @@ import Footer from '@/components/ironpulse/Footer'
 import ScrollProgressBar from '@/components/ui/ScrollProgressBar'
 import SmoothScroll from '@/components/ui/SmoothScroll'
 import ScrollToTop from '@/components/ui/ScrollToTop'
+import CoachChat from '@/components/ironpulse/CoachChat'
 
 export default function IronpulsePage() {
   return (
@@ -28,6 +29,7 @@ export default function IronpulsePage() {
         <Footer />
       </div>
       <ScrollToTop bgColor="bg-orange-500" hoverBgColor="hover:bg-orange-600" />
+      <CoachChat />
     </>
   )
 }

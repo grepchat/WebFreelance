@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "CodeForge Academy — Стань разработчиком за 6 месяцев",
+  title: "CodeForge Academy — Grepchat Landings",
   description: "Практические курсы программирования с менторством и гарантией трудоустройства. Полный путь от новичка до Pro.",
   openGraph: {
     title: "CodeForge Academy — Курсы программирования",

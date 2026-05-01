@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "APEX Detailing — Премиум детейлинг и защита автомобилей",
+  title: "APEX Detailing — Grepchat Landings",
   description: "Детейлинг центр премиум-класса. Керамика, полировка, пленка. Ваша машина достойна совершенства.",
   openGraph: {
     title: "APEX Detailing — Премиум детейлинг",

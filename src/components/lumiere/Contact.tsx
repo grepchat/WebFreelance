@@ -2,13 +2,18 @@
 
 import { useState } from 'react'
 import { motion } from 'framer-motion'
+import PrivacyPolicyModal from '@/components/ui/PrivacyPolicyModal'
+import { translations } from '@/translations'
 import { MapPin, Phone, Clock, Send } from 'lucide-react'
+
+const ru = translations.ru
 
 const services = ['Стрижка и укладка', 'Окрашивание', 'Маникюр', 'Косметология', 'Брови/Ресницы', 'Массаж']
 
 export default function Contact() {
   const [form, setForm] = useState({ name: '', phone: '', service: 'Стрижка и укладка', comment: '' })
   const [submitted, setSubmitted] = useState(false)
+  const [privacyOpen, setPrivacyOpen] = useState(false)
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
@@ -120,7 +125,14 @@ export default function Contact() {
                     Записаться на приём →
                   </button>
                   <p className="text-xs text-center text-lumiere-muted">
-                    Нажимая кнопку, вы соглашаетесь с политикой конфиденциальности.
+                    {ru.contact.form.privacyBefore}
+                    <button
+                      type="button"
+                      onClick={() => setPrivacyOpen(true)}
+                      className="text-lumiere-accent underline decoration-lumiere-accent/40 underline-offset-2 hover:decoration-lumiere-accent"
+                    >
+                      {ru.contact.form.privacyLink}
+                    </button>
                   </p>
                 </div>
               )}
@@ -128,6 +140,14 @@ export default function Contact() {
           </motion.div>
         </div>
       </div>
+      <PrivacyPolicyModal
+        open={privacyOpen}
+        onClose={() => setPrivacyOpen(false)}
+        title={ru.privacyPolicy.title}
+        closeLabel={ru.privacyPolicy.close}
+        sections={ru.privacyPolicy.sections}
+        variant="light"
+      />
     </section>
   )
 }

@@ -1,6 +1,7 @@
 'use client'
 
 import { Github, Mail, Send } from 'lucide-react'
+import Image from 'next/image'
 import { useLanguage } from '@/context/LanguageContext'
 
 export default function Footer() {
@@ -12,7 +13,16 @@ export default function Footer() {
       <div className="container-custom">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           <div>
-            <p className="text-lg font-bold text-gray-900">{f.brand}</p>
+            <p className="text-lg font-bold text-gray-900 flex items-center gap-2">
+              <Image
+                src="/favicon/favicon.svg"
+                alt={`${f.brand} logo`}
+                width={24}
+                height={24}
+                className="w-6 h-6 rounded-sm"
+              />
+              <span>{f.brand}</span>
+            </p>
             <p className="text-sm text-gray-500">{f.tagline}</p>
           </div>
           <div className="flex items-center gap-4">

@@ -5,10 +5,12 @@ import { motion } from 'framer-motion'
 import { Send, CheckCircle, Phone, Mail } from 'lucide-react'
 import { submitContactForm } from '@/lib/contact'
 import { useLanguage } from '@/context/LanguageContext'
+import PrivacyPolicyModal from '@/components/ui/PrivacyPolicyModal'
 
 export default function ContactForm() {
   const { t } = useLanguage()
   const c = t.contact
+  const [privacyOpen, setPrivacyOpen] = useState(false)
 
   const [name, setName] = useState('')
   const [phone, setPhone] = useState('')
@@ -16,9 +18,11 @@ export default function ContactForm() {
   const [message, setMessage] = useState('')
   const [submitted, setSubmitted] = useState(false)
   const [loading, setLoading] = useState(false)
+  const [submitError, setSubmitError] = useState('')
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
+    setSubmitError('')
     setLoading(true)
     const result = await submitContactForm(name, phone, messenger, message)
     setLoading(false)
@@ -29,6 +33,8 @@ export default function ContactForm() {
       setMessenger('')
       setMessage('')
       setTimeout(() => setSubmitted(false), 5000)
+    } else {
+      setSubmitError('Не удалось отправить заявку. Проверьте настройки EmailJS и попробуйте снова.')
     }
   }
 
@@ -122,14 +128,32 @@ export default function ContactForm() {
                     )}
                   </button>
                   <p className="text-xs text-center text-gray-400">
-                    {c.form.privacy}
+                    {c.form.privacyBefore}
+                    <button
+                      type="button"
+                      onClick={() => setPrivacyOpen(true)}
+                      className="text-blue-600 underline decoration-blue-600/30 underline-offset-2 hover:decoration-blue-600"
+                    >
+                      {c.form.privacyLink}
+                    </button>
                   </p>
+                  {submitError ? (
+                    <p className="text-sm text-center text-red-600">{submitError}</p>
+                  ) : null}
                 </div>
               )}
             </form>
           </motion.div>
         </div>
       </div>
+      <PrivacyPolicyModal
+        open={privacyOpen}
+        onClose={() => setPrivacyOpen(false)}
+        title={t.privacyPolicy.title}
+        closeLabel={t.privacyPolicy.close}
+        sections={t.privacyPolicy.sections}
+        variant="light"
+      />
     </section>
   )
 }
