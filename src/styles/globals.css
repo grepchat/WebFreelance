@@ -1,9 +1,32 @@
+/* Локальные шрифты (@fontsource): без запросов к Google на этапе next build (Amvera / CI). */
+@import '@fontsource-variable/manrope/index.css';
+@import '@fontsource-variable/playfair-display/index.css';
+@import '@fontsource-variable/montserrat/index.css';
+@import '@fontsource/bebas-neue/index.css';
+@import '@fontsource-variable/inter/index.css';
+@import '@fontsource-variable/space-grotesk/index.css';
+@import '@fontsource-variable/dm-sans/index.css';
+@import '@fontsource/archivo-black/index.css';
+@import '@fontsource-variable/oswald/index.css';
+@import '@fontsource-variable/roboto/index.css';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
   --scroll-behavior: smooth;
+  /* Имена семейств совпадают с @font-face в пакетах fontsource (см. tailwind.config fontFamily). */
+  --font-manrope: 'Manrope Variable', sans-serif;
+  --font-playfair: 'Playfair Display Variable', serif;
+  --font-montserrat: 'Montserrat Variable', sans-serif;
+  --font-bebas: 'Bebas Neue', sans-serif;
+  --font-inter: 'Inter Variable', sans-serif;
+  --font-space: 'Space Grotesk Variable', sans-serif;
+  --font-dmsans: 'DM Sans Variable', sans-serif;
+  --font-archivo: 'Archivo Black', sans-serif;
+  --font-oswald: 'Oswald Variable', sans-serif;
+  --font-roboto: 'Roboto Variable', sans-serif;
 }
 
 * {
