@@ -27,8 +27,6 @@
 
 **Стек:** Next.js 14, Tailwind CSS, Framer Motion, TypeScript
 
----
-
 ## 📬 Связаться со мной
 
 - Telegram: [@grepchat](https://t.me/grepchat)
