@@ -1,4 +1,14 @@
-# https://docs.amvera.ru/applications/configuration/docker.html
-# По умолчанию Amvera ожидает порт 80; Next.js standalone слушает 3000 (см. Dockerfile).
+meta:
+  environment: docker
+  toolchain:
+    name: docker
+build:
+  dockerfile: Dockerfile
+  skip: false
 run:
+  image: null
+  command: null
+  args: null
+  persistenceMount: /data
   containerPort: 3000
+  servicePort: 80
