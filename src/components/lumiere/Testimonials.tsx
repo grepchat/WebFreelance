@@ -5,11 +5,11 @@ import { motion } from 'framer-motion'
 import { ChevronLeft, ChevronRight, Quote, Star } from 'lucide-react'
 
 const testimonials = [
-  { id: 1, name: 'Анна С.', role: 'Клиент 2 года', text: 'Это не просто салон, это место силы! Мастера — настоящие художники. Уже второй год хожу только сюда.', rating: 5, avatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=80' },
-  { id: 2, name: 'Мария К.', role: 'Бьюти-блогер', text: 'Идеальное окрашивание, которое не портит волосы. Рекомендую всем своим подписчикам.', rating: 5, avatar: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=80' },
-  { id: 3, name: 'Екатерина В.', role: 'Постоянный клиент', text: 'Атмосфера, сервис, результат — всё на высоте. Чувствуешь себя королевой.', rating: 5, avatar: 'https://images.unsplash.com/photo-1587654165988-4e1d49d5b666?q=80&w=80' },
-  { id: 4, name: 'Ольга П.', role: 'Клиент 1 год', text: 'Впервые довольна маникюром на 100%. Ношу покрытие 4 недели без сколов!', rating: 5, avatar: 'https://images.unsplash.com/photo-1567719147888-91d1e4c1e2c1?q=80&w=80' },
-  { id: 5, name: 'Дарья Л.', role: 'VIP клиент', text: 'Лучший спа-массаж в городе. Ухожу как новая. Спасибо команде за заботу!', rating: 5, avatar: 'https://images.unsplash.com/photo-1553907281-5421879c3b20?q=80&w=80' },
+  { id: 1, name: 'Анна С.', role: 'Клиент 2 года', text: 'Это не просто салон, это место силы! Мастера — настоящие художники. Уже второй год хожу только сюда.', rating: 5, avatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=320' },
+  { id: 2, name: 'Мария К.', role: 'Бьюти-блогер', text: 'Идеальное окрашивание, которое не портит волосы. Рекомендую всем своим подписчикам.', rating: 5, avatar: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=320' },
+  { id: 3, name: 'Екатерина В.', role: 'Постоянный клиент', text: 'Атмосфера, сервис, результат — всё на высоте. Чувствуешь себя королевой.', rating: 5, avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=320' },
+  { id: 4, name: 'Ольга П.', role: 'Клиент 1 год', text: 'Впервые довольна маникюром на 100%. Ношу покрытие 4 недели без сколов!', rating: 5, avatar: 'https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?q=80&w=320' },
+  { id: 5, name: 'Дарья Л.', role: 'VIP клиент', text: 'Лучший спа-массаж в городе. Ухожу как новая. Спасибо команде за заботу!', rating: 5, avatar: 'https://images.unsplash.com/photo-1488426862026-3ee34a29d9f2?q=80&w=320' },
 ]
 
 export default function Testimonials() {

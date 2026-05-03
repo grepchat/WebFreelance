@@ -4,12 +4,12 @@ import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const projects = [
-  { id: 1, category: 'Офисы', title: 'БЦ "Горизонт"', area: '12,500 м²', location: 'Москва', image: 'https://images.unsplash.com/photo-1486406146920-d29f3a43d828?q=80&w=600' },
-  { id: 2, category: 'ТЦ', title: 'ТК "Мегаполис"', area: '28,000 м²', location: 'Санкт-Петербург', image: 'https://images.unsplash.com/photo-1519567241046-7f570eee3d9f?q=80&w=600' },
-  { id: 3, category: 'Склады', title: 'Логопарк "Юг"', area: '15,000 м²', location: 'Краснодар', image: 'https://images.unsplash.com/photo-1587293852726-70cdb56c2866?q=80&w=600' },
-  { id: 4, category: 'Офисы', title: 'Коворкинг "Среда"', area: '3,500 м²', location: 'Казань', image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=600' },
-  { id: 5, category: 'ТЦ', title: 'ТРЦ "Арена"', area: '42,000 м²', location: 'Новосибирск', image: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?q=80&w=600' },
-  { id: 6, category: 'Склады', title: 'Складской комплекс №5', area: '8,200 м²', location: 'Екатеринбург', image: 'https://images.unsplash.com/photo-1513828583688-c52646db42da?q=80&w=600' },
+  { id: 1, category: 'Офисы', title: 'БЦ "Горизонт"', area: '12,500 м²', location: 'Москва', image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=1600' },
+  { id: 2, category: 'ТЦ', title: 'ТК "Мегаполис"', area: '28,000 м²', location: 'Санкт-Петербург', image: 'https://images.unsplash.com/photo-1441986300917-64674bd600d8?q=80&w=1600' },
+  { id: 3, category: 'Склады', title: 'Логопарк "Юг"', area: '15,000 м²', location: 'Краснодар', image: 'https://images.unsplash.com/photo-1587293852726-70cdb56c2866?q=80&w=1600' },
+  { id: 4, category: 'Офисы', title: 'Коворкинг "Среда"', area: '3,500 м²', location: 'Казань', image: 'https://images.unsplash.com/photo-1524758631624-e2822e304c36?q=80&w=1600' },
+  { id: 5, category: 'ТЦ', title: 'ТРЦ "Арена"', area: '42,000 м²', location: 'Новосибирск', image: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?q=80&w=1600' },
+  { id: 6, category: 'Склады', title: 'Складской комплекс №5', area: '8,200 м²', location: 'Екатеринбург', image: 'https://images.unsplash.com/photo-1513828583688-c52646db42da?q=80&w=1600' },
 ];
 
 const categories = ['Все', 'Офисы', 'ТЦ', 'Склады'];

@@ -11,7 +11,7 @@ const programs = [
     title: 'Похудение',
     description: 'Жиросжигающие тренировки + план питания. Результат: минус 3-8 кг за первый месяц.',
     features: ['HIIT и кардио', 'Дефицит калорий', 'Ежедневный контроль'],
-    image: 'https://images.unsplash.com/photo-1538805060500-3691e76c5896?q=80&w=600',
+    image: 'https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?q=80&w=1600',
   },
   {
     id: 2,
@@ -19,7 +19,7 @@ const programs = [
     title: 'Набор массы',
     description: 'Силовые тренировки для роста мышц. Результат: +4-7 кг сухой мышечной массы.',
     features: ['Базовые упражнения', 'Профицит калорий', 'Периодизация'],
-    image: 'https://images.unsplash.com/photo-1581009146145-6ef6e7764a15?q=80&w=600',
+    image: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1600',
   },
   {
     id: 3,
@@ -27,7 +27,7 @@ const programs = [
     title: 'Рельеф и Тонус',
     description: 'Сушка и прорисовка мышц. Результат: видимый пресс и сухое тело.',
     features: ['Кардио + Силовые', 'Циклирование углей', 'Детальная проработка'],
-    image: 'https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?q=80&w=600',
+    image: 'https://images.pexels.com/photos/2294363/pexels-photo-2294363.jpeg?auto=compress&cs=tinysrgb&w=1600',
   },
 ]
 

@@ -28,7 +28,8 @@ export default function Coach() {
               <div
                 className="rounded-xl overflow-hidden h-[600px] bg-cover bg-center w-full"
                 style={{
-                  backgroundImage: "url('https://images.unsplash.com/photo-1567013127542-491b52977f50?q=80&w=800')",
+                  backgroundImage:
+                    "url('https://images.pexels.com/photos/5327454/pexels-photo-5327454.jpeg?auto=compress&cs=tinysrgb&w=1920')",
                 }}
               />
             </motion.div>

@@ -8,26 +8,26 @@ const galleryItems = [
   {
     id: 1,
     category: 'Стрижки',
-    before: 'https://images.unsplash.com/photo-1562322140-8baeececf3df?q=80&w=400',
-    after: 'https://images.unsplash.com/photo-1596728325488-58c37691e9d2?q=80&w=400',
+    before: 'https://images.pexels.com/photos/3997383/pexels-photo-3997383.jpeg?auto=compress&cs=tinysrgb&w=1600',
+    after: 'https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?q=80&w=1600',
   },
   {
     id: 2,
     category: 'Окрашивание',
-    before: 'https://images.unsplash.com/photo-1567894340315-735d7c361db7?q=80&w=400',
-    after: 'https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?q=80&w=400',
+    before: 'https://images.unsplash.com/photo-1562322140-8baeececf3df?q=80&w=1600',
+    after: 'https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?q=80&w=1600',
   },
   {
     id: 3,
     category: 'Маникюр',
-    before: 'https://images.unsplash.com/photo-1604654894610-df63bc536371?q=80&w=400',
-    after: 'https://images.unsplash.com/photo-1607779097040-26e80aa78e66?q=80&w=400',
+    before: 'https://images.pexels.com/photos/939836/pexels-photo-939836.jpeg?auto=compress&cs=tinysrgb&w=1600',
+    after: 'https://images.unsplash.com/photo-1607779097040-26e80aa78e66?q=80&w=1600',
   },
   {
     id: 4,
     category: 'Брови',
-    before: 'https://images.unsplash.com/photo-1598257006807-67c1c3f8c584?q=80&w=400',
-    after: 'https://images.unsplash.com/photo-1604772659841-a1612a6a9e3c?q=80&w=400',
+    before: 'https://images.pexels.com/photos/3373735/pexels-photo-3373735.jpeg?auto=compress&cs=tinysrgb&w=1600',
+    after: 'https://images.pexels.com/photos/5069433/pexels-photo-5069433.jpeg?auto=compress&cs=tinysrgb&w=1600',
   },
 ]
 

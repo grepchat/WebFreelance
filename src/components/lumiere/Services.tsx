@@ -11,7 +11,7 @@ const services = [
     title: 'Стрижки и укладки',
     description: 'Женские и мужские стрижки, креативные укладки для любого события.',
     price: 'от 2,500 ₽',
-    image: "https://images.unsplash.com/photo-1560859251-d563a49c5e4a?q=80&w=400",
+    image: 'https://images.unsplash.com/photo-1560859251-d563a49c5e4a?q=80&w=1600',
   },
   {
     id: 2,
@@ -19,7 +19,7 @@ const services = [
     title: 'Окрашивание',
     description: 'Балаяж, шатуш, аиртач, однотонное окрашивание премиум- составами.',
     price: 'от 4,500 ₽',
-    image: "https://images.unsplash.com/photo-1562322140-8baeececf3df?q=80&w=400",
+    image: 'https://images.unsplash.com/photo-1560066984-138dadb4c035?q=80&w=1600',
   },
   {
     id: 3,
@@ -27,7 +27,7 @@ const services = [
     title: 'Маникюр и педикюр',
     description: 'Классический, аппаратный, комбинированный маникюр с покрытием.',
     price: 'от 1,800 ₽',
-    image: "https://images.unsplash.com/photo-1604654894610-df63bc536371?q=80&w=400",
+    image: 'https://images.unsplash.com/photo-1604654894610-df63bc536371?q=80&w=1600',
   },
   {
     id: 4,
@@ -35,7 +35,7 @@ const services = [
     title: 'Косметология',
     description: 'Чистки, пилинги, уходовые процедуры, массаж лица, мезотерапия.',
     price: 'от 3,000 ₽',
-    image: "https://images.unsplash.com/photo-1512290923982-8139d8988837?q=80&w=400",
+    image: 'https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?q=80&w=1600',
   },
   {
     id: 5,
@@ -43,7 +43,7 @@ const services = [
     title: 'Брови и ресницы',
     description: 'Архитектура бровей, ламинирование, наращивание ресниц.',
     price: 'от 1,500 ₽',
-    image: "https://images.unsplash.com/photo-1588776814546-77853232873c?q=80&w=400",
+    image: 'https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?q=80&w=1600',
   },
   {
     id: 6,
@@ -51,7 +51,7 @@ const services = [
     title: 'Расслабляющий массаж',
     description: 'Классический, расслабляющий, антистресс-массаж всего тела.',
     price: 'от 3,500 ₽',
-    image: "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=400",
+    image: 'https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=1600',
   },
 ]
 

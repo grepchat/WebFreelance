@@ -6,11 +6,11 @@ import Link from 'next/link'
 import { useLanguage } from '@/context/LanguageContext'
 
 const projectImages = [
-  'https://images.unsplash.com/photo-1560066984-138dadb4c035?w=600&q=80', // LUMIÈRE — salon
-  'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=600&q=80', // IRONPULSE — gym
-  'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600&q=80', // CodeForge — code
-  'https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=600&q=80', // VERTEX — construction
-  'https://images.unsplash.com/photo-1600712242805-5f78671b24da?w=600&q=80', // APEX — car
+  'https://images.unsplash.com/photo-1560066984-138dadb4c035?q=80&w=1200', // LUMIÈRE — salon
+  'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1200', // IRONPULSE — gym
+  'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?q=80&w=1200', // CodeForge — code
+  'https://images.unsplash.com/photo-1487958449943-2429e8be8625?q=80&w=1200', // VERTEX — construction
+  'https://images.unsplash.com/photo-1600712242805-5f78671b24da?q=80&w=1200', // APEX — car
 ]
 
 const projectPaths = ['/lumiere', '/ironpulse', '/codeforge', '/vertex', '/apex']

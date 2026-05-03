@@ -5,10 +5,10 @@ import { motion } from 'framer-motion'
 import { ChevronLeft, ChevronRight, Quote, Star } from 'lucide-react'
 
 const testimonials = [
-  { id: 1, name: 'Игорь С.', role: 'Frontend Developer в Тинькофф', text: 'До CodeForge я год пытался учиться сам. За 6 месяцев на курсе я получил больше, чем за всё время. Самое ценное — менторство и ревью кода.', rating: 5, avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=80' },
-  { id: 2, name: 'Мария К.', role: 'Junior Developer в СБЕР', text: 'Пришла из бухгалтерии. Думала, что программирование — это для мужчин. Оказалось, что нужно только желание и хороший наставник. Спасибо Алексею!', rating: 5, avatar: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=80' },
-  { id: 3, name: 'Дмитрий В.', role: 'Fullstack в Яндекс', text: 'Курс дал мне системное понимание. На собеседовании в Яндекс я чувствовал себя уверенно, потому что знал теорию и имел практику.', rating: 5, avatar: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=80' },
-  { id: 4, name: 'Анна Л.', role: 'React Developer в Авито', text: 'Огромное практическое количество задач. 4 проекта в портфолио — именно они помогли мне получить оффер.', rating: 5, avatar: 'https://images.unsplash.com/photo-1559526324-c1f272005262?q=80&w=80' },
+  { id: 1, name: 'Игорь С.', role: 'Frontend Developer в Тинькофф', text: 'До CodeForge я год пытался учиться сам. За 6 месяцев на курсе я получил больше, чем за всё время. Самое ценное — менторство и ревью кода.', rating: 5, avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=320' },
+  { id: 2, name: 'Мария К.', role: 'Junior Developer в СБЕР', text: 'Пришла из бухгалтерии. Думала, что программирование — это для мужчин. Оказалось, что нужно только желание и хороший наставник. Спасибо Алексею!', rating: 5, avatar: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=320' },
+  { id: 3, name: 'Дмитрий В.', role: 'Fullstack в Яндекс', text: 'Курс дал мне системное понимание. На собеседовании в Яндекс я чувствовал себя уверенно, потому что знал теорию и имел практику.', rating: 5, avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=320' },
+  { id: 4, name: 'Анна Л.', role: 'React Developer в Авито', text: 'Огромное практическое количество задач. 4 проекта в портфолио — именно они помогли мне получить оффер.', rating: 5, avatar: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=320' },
 ]
 
 export default function Testimonials() {

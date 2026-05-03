@@ -11,7 +11,7 @@ const videos = [
     title: 'Результат после полировки',
     client: 'Алексей, владелец BMW M5',
     car: 'BMW M5 Competition',
-    thumbnail: 'https://images.unsplash.com/photo-1549399542-7e3f8b79c341?w=800&q=80',
+    thumbnail: 'https://images.unsplash.com/photo-1619405399517-d7fce0f13302?q=80&w=1200',
     likes: 234,
   },
   {
@@ -19,7 +19,7 @@ const videos = [
     title: 'Керамическое покрытие',
     client: 'Дмитрий, владелец Mercedes S-Class',
     car: 'Mercedes-Benz S-Class',
-    thumbnail: 'https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=800&q=80',
+    thumbnail: 'https://images.unsplash.com/photo-1502877338535-766e1452684a?q=80&w=1200',
     likes: 189,
   },
   {
@@ -27,7 +27,7 @@ const videos = [
     title: 'Химчистка салона',
     client: 'Елена, владелец Porsche Cayenne',
     car: 'Porsche Cayenne',
-    thumbnail: 'https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?w=800&q=80',
+    thumbnail: 'https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?q=80&w=1200',
     likes: 312,
   },
 ]
@@ -61,7 +61,7 @@ export default function VideoTestimonialsSection() {
                   </div>
                 ) : (
                   <>
-                    <img src={video.thumbnail} alt={video.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+                    <img src={video.thumbnail} alt={video.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="eager" decoding="async" />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
                     <div className="absolute inset-0 flex items-center justify-center">
                       <div className="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center group-hover:bg-red-700 transition-colors shadow-xl">

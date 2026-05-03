@@ -23,7 +23,7 @@ export default function Expert() {
               <div
                 className="relative h-[500px] bg-cover bg-center rounded-2xl overflow-hidden"
                 style={{
-                  backgroundImage: "url('https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=800')",
+                  backgroundImage: "url('https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=1600')",
                 }}
               />
             </motion.div>

@@ -4,12 +4,12 @@ import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 
 const images = [
-  { id: 1, title: 'Porsche 911 GT3 — Polishing', url: 'https://images.unsplash.com/photo-1503376763036-066120622c74?q=80&w=400' },
-  { id: 2, title: 'BMW X5 M — Ceramic', url: 'https://images.unsplash.com/photo-1555529733-0e67052448f4?q=80&w=400' },
-  { id: 3, title: 'Mercedes G-Class — Film', url: 'https://images.unsplash.com/photo-1520031441772-293e58f7c093?q=80&w=400' },
-  { id: 4, title: 'Audi RS7 — Interior', url: 'https://images.unsplash.com/photo-1542141856-686f6461647d?q=80&w=400' },
-  { id: 5, title: 'Tesla Model S — Detailing', url: 'https://images.unsplash.com/photo-1617788138017-80ad40651399?q=80&w=400' },
-  { id: 6, title: 'Lamborghini Huracan — PPF', url: 'https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?q=80&w=400' },
+  { id: 1, title: 'Porsche 911 GT3 — Polishing', url: 'https://images.unsplash.com/photo-1494976388531-d1058494cdd8?q=80&w=1600' },
+  { id: 2, title: 'BMW X5 M — Ceramic', url: 'https://images.unsplash.com/photo-1555215695-3004980ad54e?q=80&w=1600' },
+  { id: 3, title: 'Mercedes G-Class — Film', url: 'https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?q=80&w=1600' },
+  { id: 4, title: 'Audi RS7 — Interior', url: 'https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?q=80&w=1600' },
+  { id: 5, title: 'Tesla Model S — Detailing', url: 'https://images.unsplash.com/photo-1617788138017-80ad40651399?q=80&w=1600' },
+  { id: 6, title: 'Lamborghini Huracan — PPF', url: 'https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?q=80&w=1600' },
 ]
 
 export default function Gallery() {

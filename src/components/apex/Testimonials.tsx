@@ -3,9 +3,9 @@
 import { Quote } from 'lucide-react'
 
 const testimonials = [
-  { name: 'Владимир К.', car: 'BMW M5', text: 'Записался на полировку и керамику. Результат — как будто только с завода. Машина выглядит лучше новой!', avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=80' },
-  { name: 'Андрей С.', car: 'Porsche Cayenne', text: 'Оклеили весь перед бронепленкой. Швы не видно, работа ювелирная. Ребята профи своего дела.', avatar: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=80' },
-  { name: 'Екатерина М.', car: 'Mercedes C-Class', text: 'Химчистка салона просто на высоте. Убрали пятно, с которым я мучилась полгода. Очень рекомендую.', avatar: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=80' },
+  { name: 'Владимир К.', car: 'BMW M5', text: 'Записался на полировку и керамику. Результат — как будто только с завода. Машина выглядит лучше новой!', avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=320' },
+  { name: 'Андрей С.', car: 'Porsche Cayenne', text: 'Оклеили весь перед бронепленкой. Швы не видно, работа ювелирная. Ребята профи своего дела.', avatar: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=320' },
+  { name: 'Екатерина М.', car: 'Mercedes C-Class', text: 'Химчистка салона просто на высоте. Убрали пятно, с которым я мучилась полгода. Очень рекомендую.', avatar: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=320' },
 ]
 
 export default function Testimonials() {

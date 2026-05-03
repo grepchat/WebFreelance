@@ -62,7 +62,7 @@ export default function About() {
                transition={{ delay: 0.2, duration: 0.8 }}
                className="relative"
             >
-              <div className="rounded-2xl overflow-hidden h-64 w-full bg-cover bg-center" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?q=80&w=400')" }} />
+              <div className="rounded-2xl overflow-hidden h-64 w-full bg-cover bg-center" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?q=80&w=1600')" }} />
             </motion.div>
             <motion.div 
                initial={{ opacity: 0, scale: 0.9 }}
@@ -70,7 +70,7 @@ export default function About() {
                transition={{ delay: 0.4, duration: 0.8 }}
                className="relative mt-8"
             >
-              <div className="rounded-2xl overflow-hidden h-64 w-full bg-cover bg-center" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?q=80&w=400')" }} />
+              <div className="rounded-2xl overflow-hidden h-64 w-full bg-cover bg-center" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1559599101-f09722fb4948?q=80&w=1600')" }} />
               <div className="absolute -z-10 bottom-[-16px] right-[-16px] w-full h-full border-2 border-lumiere-accent rounded-2xl" />
             </motion.div>
           </div>
